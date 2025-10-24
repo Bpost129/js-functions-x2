@@ -88,3 +88,19 @@
 // (function(){
 //   console.log('This function runs right away!')
 // })()
+
+
+//nested function example
+const title = 'This is the title of my cool book'
+
+function toTitleCase(string){
+  function capitalize(word){
+    return word.slice(0,1).toUpperCase() + word.slice(1)
+  }
+
+  let strArr = string.split(' ')
+  strArr.forEach((el, i) => strArr[i] = capitalize(el))
+  return strArr.join(' ')
+}
+
+toTitleCase(title) // This Is The Title Of My Cool Book

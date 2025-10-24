@@ -33,8 +33,25 @@
 
 // sayHello('Alice')
 
-function getRandomInt(min, max) {
-  console.log(Math.floor(Math.random() * (max - min + 1) + min))
-}
+// function getRandomInt(min, max) {
+//   console.log(Math.floor(Math.random() * (max - min + 1) + min))
+// }
 
-getRandomInt(1, 10)
+// getRandomInt(1, 10)
+
+function getPointsScored(...times) {
+  let totalPoints = 0
+  times.forEach(function(time) {
+    if (time < 30) {
+      totalPoints += 100
+    } else if (time < 60) {
+      totalPoints += 75
+    } else {
+      totalPoints += 25
+    }
+  })
+  return totalPoints
+}
+	
+const points = getPointsScored(16, 99, 32, 60)
+console.log(points)

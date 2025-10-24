@@ -64,13 +64,21 @@
 // console.log(area)
 
 
-let planetHasWater = function(planet) {
-  if (planet.toLowerCase() === 'earth' || planet.toLowerCase() === 'mars') {
-    return true
-  } else {
-    return false
-  }
+// let planetHasWater = function(planet) {
+//   if (planet.toLowerCase() === 'earth' || planet.toLowerCase() === 'mars') {
+//     return true
+//   } else {
+//     return false
+//   }
+// }
+
+// let earth = planetHasWater('EaRtH')
+// console.log(earth)
+
+function isMultipleOfTen(number){
+  return number % 10 === 0
 }
 
-let earth = planetHasWater('EaRtH')
-console.log(earth)
+for(let i = 1; i <= 20; i++){
+  console.log( isMultipleOfTen(i), i )
+}

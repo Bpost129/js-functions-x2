@@ -39,19 +39,38 @@
 
 // getRandomInt(1, 10)
 
-function getPointsScored(...times) {
-  let totalPoints = 0
-  times.forEach(function(time) {
-    if (time < 30) {
-      totalPoints += 100
-    } else if (time < 60) {
-      totalPoints += 75
-    } else {
-      totalPoints += 25
-    }
-  })
-  return totalPoints
-}
+// function getPointsScored(...times) {
+//   let totalPoints = 0
+//   times.forEach(function(time) {
+//     if (time < 30) {
+//       totalPoints += 100
+//     } else if (time < 60) {
+//       totalPoints += 75
+//     } else {
+//       totalPoints += 25
+//     }
+//   })
+//   return totalPoints
+// }
 	
-const points = getPointsScored(16, 99, 32, 60)
-console.log(points)
+// const points = getPointsScored(16, 99, 32, 60)
+// console.log(points)
+
+// function computeArea(width, height) {
+//   return `The area of a rectangle with a width of ${width} and a height of ${height} is ${width * height} square units`
+// }
+
+// let area = computeArea(3, 6);
+// console.log(area)
+
+
+let planetHasWater = function(planet) {
+  if (planet.toLowerCase() === 'earth' || planet.toLowerCase() === 'mars') {
+    return true
+  } else {
+    return false
+  }
+}
+
+let earth = planetHasWater('EaRtH')
+console.log(earth)

@@ -75,10 +75,16 @@
 // let earth = planetHasWater('EaRtH')
 // console.log(earth)
 
-function isMultipleOfTen(number){
-  return number % 10 === 0
-}
+// function isMultipleOfTen(number){
+//   return number % 10 === 0
+// }
 
-for(let i = 1; i <= 20; i++){
-  console.log( isMultipleOfTen(i), i )
-}
+// for(let i = 1; i <= 20; i++){
+//   console.log( isMultipleOfTen(i), i )
+// }
+
+
+//immediately invoked function expression (IIFE)
+// (function(){
+//   console.log('This function runs right away!')
+// })()

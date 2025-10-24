@@ -27,8 +27,14 @@
 // }
 
 //arrow function
-let sayHello = (name) => {
-  console.log(`Hello ${name}!`)
+// let sayHello = (name) => {
+//   console.log(`Hello ${name}!`)
+// }
+
+// sayHello('Alice')
+
+function getRandomInt(min, max) {
+  console.log(Math.floor(Math.random() * (max - min + 1) + min))
 }
 
-sayHello('Alice')
+getRandomInt(1, 10)

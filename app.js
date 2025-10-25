@@ -107,8 +107,16 @@
 
 
 
-const add = (x, y) => x + y
+// const add = (x, y) => x + y
 
-let sum = add(12, 3)
+// let sum = add(12, 3)
 
-console.log(sum)
+// console.log(sum)
+
+
+//to implicitly return objects, wrap in parentheses ()
+let todos = ['Buy milk', 'Mow lawn']
+
+let todoObjects = todos.map(todo => ({todo: todo, done: false}))
+
+console.log(todoObjects)

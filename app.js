@@ -115,8 +115,11 @@
 
 
 //to implicitly return objects, wrap in parentheses ()
-let todos = ['Buy milk', 'Mow lawn']
+// let todos = ['Buy milk', 'Mow lawn']
 
-let todoObjects = todos.map(todo => ({todo: todo, done: false}))
+// let todoObjects = todos.map(todo => ({todo: todo, done: false}))
 
-console.log(todoObjects)
+// console.log(todoObjects)
+
+//object methods written as arrow functions cannot access that object's properties
+//aka. no arrow functions within objects
